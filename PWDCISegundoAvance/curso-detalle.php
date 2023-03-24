@@ -91,10 +91,12 @@ if(!isset($_SESSION['Nombre_Usuario'])){
               <p>Maestro</p>
               <br>
               <h3><h3><?php echo $_SESSION['Nombre_Usuario']; ?></h3></h3>
+              <h3><?php echo $_SESSION['NomPatr_Usuario']; ?></h3>
+      <h3><?php echo $_SESSION['NomMatr_Usuario']; ?></h3>
             </div>
             <hr>
         
-          <a href="#" class="sub-menu-link">
+          <a href="editar.php" class="sub-menu-link">
         
           <img src="img/Profile.png">
           <p>Editar Perfil</p>
