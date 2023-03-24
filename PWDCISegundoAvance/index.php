@@ -125,7 +125,7 @@ if(!isset($_SESSION['Nombre_Usuario'])){
     </div>
     <hr>
 
-  <a href="#" class="sub-menu-link">
+  <a href="editar.php" class="sub-menu-link">
 
   <img src="img/Profile.png">
   <p>Editar Perfil</p>

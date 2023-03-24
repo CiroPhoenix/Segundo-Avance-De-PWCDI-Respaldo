@@ -20,11 +20,18 @@ if(isset($_POST["submit"])){
 
     if($result->num_rows > 0){
         $row = mysqli_fetch_assoc($result);
+        $_SESSION['ID_Usuario'] = $row['ID_Usuario'];
+        $_SESSION['Foto_Usuario'] = $row['Foto_Usuario'];
         $_SESSION['Nombre_Usuario'] = $row['Nombre_Usuario'];
         $_SESSION['NomPatr_Usuario'] = $row['NomPatr_Usuario'];
         $_SESSION['NomMatr_Usuario'] = $row['NomMatr_Usuario'];
         $_SESSION['Rol_Usuario'] = $row['Rol_Usuario'];
-        $_SESSION['Foto_Usuario'] = $row['Foto_Usuario'];
+        $_SESSION['Genero_Usuario'] = $row['Genero_Usuario'];
+        $_SESSION['Nacimiento_Usuario'] = $row['Nacimiento_Usuario'];
+        $_SESSION['Nombre_usuario_Usuario'] = $row['Nombre_usuario_Usuario'];
+        $_SESSION['Correo_Usuario'] = $row['Correo_Usuario'];
+        $_SESSION['Contrasena_Usuario'] = $row['Contrasena_Usuario'];
+    
         header("Location: index.php");
     }else{
         echo "<script>alert('La contraseña o el email son incorrectos')</script>";
