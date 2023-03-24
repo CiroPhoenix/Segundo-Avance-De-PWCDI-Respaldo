@@ -88,11 +88,11 @@ if(!isset($_SESSION['Nombre_Usuario'])){
           <div class="sub-menu">
             <div class="user-info">
               <img src="img/ProfilePicture.png">
-              <p>Maestro</p>
+              <p><?php echo $_SESSION['Rol_Usuario']; ?></p>
               <br>
               <h3><h3><?php echo $_SESSION['Nombre_Usuario']; ?></h3></h3>
               <h3><?php echo $_SESSION['NomPatr_Usuario']; ?></h3>
-      <h3><?php echo $_SESSION['NomMatr_Usuario']; ?></h3>
+             <h3><?php echo $_SESSION['NomMatr_Usuario']; ?></h3>
             </div>
             <hr>
         
